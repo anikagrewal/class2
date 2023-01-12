@@ -37,19 +37,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-       <label>First Name:</label>
+       <div className={styles.layout}>
+        <label className={styles.firstn}>First Name:</label>
        <input
+       className={styles.input}
        type="text"
        id="first"
-       name="first"
+       name="first" 
        required
        pattern="[A-Z]{1}[A-Z]{2-10}"
        title="The first letter should be capitalized"
        onChange={(e => setFormData({...formData, firstName: e.target.value}))}
        />
 
-<label>Username:</label>
+     
+
+
+<label className={styles.usern}>Username:</label>
        <input
+       className={styles.input}
        type="text"
        id="username"
        name="username"
@@ -60,7 +66,10 @@ export default function Home() {
        onChange={(e => setFormData({...formData, username: e.target.value}))}
        value={formData.username}
        />
-       <button type="submit" onClick={() => CheckLogin()}>Submit</button>
+       </div>
+       <div className={styles.btnlay}>
+       <button className={styles.btn} type="submit" onClick={() => CheckLogin()}>Submit</button>
+       </div>
       </main>
     </>
   )

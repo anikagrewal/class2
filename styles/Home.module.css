@@ -4,7 +4,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  height: 100vh;
+  background-color: var(--light-green);
 }
 
 .description {
@@ -16,6 +17,7 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+  background-color: var(--light-green);
 }
 
 .description a {
@@ -129,6 +131,65 @@
   position: absolute;
   z-index: -1;
 }
+
+.firstn {
+  font-size: 50px;
+  color: var(--black);
+}
+
+.usern {
+  font-size: 50px;
+  color: var(black);
+}
+
+.btn {
+  width:  200px;
+  height: 70px;
+  font-size: 20px;
+  background-color: var(--white);
+}
+
+.input {
+  height: 40px;
+}
+
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 270px;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+
+.btnlay {
+  display: flex;
+  justify-content: center;
+}
+
+.nmbtn {
+  width: 200px;
+  height: 70px;
+  font-size: 20px;
+}
+
+.clicktxt {
+  font-size: 20px;
+}
+
+.numberlay {
+  display: flex;
+  gap: 50px;
+  
+}
+
+.txtlayout {
+  display: flex;
+  justify-content: center;
+}
+
 
 /* Conic Gradient Animation */
 .thirteen::before {
